@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../../resources/images/music.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+
+}
+
+.keys{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.key{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 100px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+kbd {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.sound {
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
